@@ -21,5 +21,8 @@ describe("Anio Bisiesto",()=>{
     it("El 2100 no deberia ser considerado anio bisiesto",()=>{
         expect(esBisiesto(2100)).toEqual(false);
     });
+    it("El 4 deberia ser considerado anio bisiesto",()=>{
+        expect(esBisiesto(4)).toEqual(true);
+    });
 
 });
