@@ -15,5 +15,8 @@ describe("Anio Bisiesto",()=>{
     it("El 1800 no deberia ser considerado anio bisiesto",()=>{
         expect(esBisiesto(1800)).toEqual(false);
     });
+    it("El 1900 no deberia ser considerado anio bisiesto",()=>{
+        expect(esBisiesto(1900)).toEqual(false);
+    });
 
 });
