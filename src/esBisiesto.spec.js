@@ -39,4 +39,7 @@ describe("Anio Bisiesto",()=>{
     it("El 2017 no deberia ser considerado anio bisiesto",()=>{
         expect(esBisiesto(2017)).toEqual(false);
     });
+    it("El 2018 no deberia ser considerado anio bisiesto",()=>{
+        expect(esBisiesto(2018)).toEqual(false);
+    });
 });
