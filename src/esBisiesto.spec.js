@@ -9,4 +9,8 @@ describe("Anio Bisiesto",()=>{
     it("El 100 no deberia ser considerado anio bisiesto",()=>{
         expect(esBisiesto(100)).toEqual(false);
     });
+    it("El 1700 no deberia ser considerado anio bisiesto",()=>{
+        expect(esBisiesto(1700)).toEqual(false);
+    });
+
 });
