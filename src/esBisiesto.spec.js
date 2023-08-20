@@ -36,5 +36,7 @@ describe("Anio Bisiesto",()=>{
     it("El 2016 deberia ser considerado anio bisiesto",()=>{
         expect(esBisiesto(2016)).toEqual(true);
     });
-
+    it("El 2017 no deberia ser considerado anio bisiesto",()=>{
+        expect(esBisiesto(2017)).toEqual(false);
+    });
 });
