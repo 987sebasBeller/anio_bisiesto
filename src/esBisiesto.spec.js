@@ -30,5 +30,11 @@ describe("Anio Bisiesto",()=>{
     it("El 2012 deberia ser considerado anio bisiesto",()=>{
         expect(esBisiesto(2012)).toEqual(true);
     });
+        it("El 2012 deberia ser considerado anio bisiesto",()=>{
+        expect(esBisiesto(2012)).toEqual(true);
+    });
+    it("El 2016 deberia ser considerado anio bisiesto",()=>{
+        expect(esBisiesto(2016)).toEqual(true);
+    });
 
 });
