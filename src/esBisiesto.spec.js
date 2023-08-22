@@ -14,11 +14,14 @@ describe("Anio Bisiesto",()=>{
 
         expect(anioBisiesto(2001)).toEqual(false);
     });
-    //como ya cumple que con la anterior lo dejamos (IMPORTANTE PONER UN BUEN MENSAJE EN EL IT)
+    //como ya cumple gracias a  la anterior lo dejamos (IMPORTANTE PONER UN BUEN MENSAJE EN EL IT)
     it("no es bisiesto si  es divisible por 100 pero no por 400",()=>{//en el it ponermos la regla del negocio si o si 
         expect(anioBisiesto(1700)).toEqual(false);
     });
 
+    it(" es bisiesto si  es divisible por 4 pero no por 100",()=>{//en el it ponermos la regla del negocio si o si 
+        expect(anioBisiesto(2008)).toEqual(true);
+    });
 
 
 
