@@ -22,6 +22,9 @@ describe("Anio Bisiesto",()=>{
     it(" es bisiesto si  es divisible por 4 pero no por 100",()=>{//en el it ponermos la regla del negocio si o si 
         expect(anioBisiesto(2008)).toEqual(true);
     });
+    it(" no es bisiesto si no es divisible por 4 ",()=>{ // ya cumplio gracias a la anterior regla lo dejamos
+        expect(anioBisiesto(2017)).toEqual(false);
+    });
 
 
 
