@@ -6,6 +6,10 @@ describe("Anio Bisiesto",()=>{
         const year=new Year(2000);
         expect(year.esBisiesto()).toEqual(true);
     });
+    it("no es bisiesto si no es divisible por 400",()=>{
+        const year=new Year(2001);
+        expect(year.esBisiesto()).toEqual(false);
+    });
     // it("El 400 deberia ser considerado anio bisiesto",()=>{
     //     expect(esBisiesto(400)).toEqual(true);
     // });
